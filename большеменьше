@@ -1,0 +1,14 @@
+import random
+secret=random.randint(1,101)
+status=-2
+while status!=0:
+        x=int(input('введи число: '))
+        if x<secret:
+            status=-1
+            print('нужно больше')
+        if x>secret:
+            status=1
+            print('нужно меньше')
+        if x==secret:
+            status=0
+            print('угадал')
